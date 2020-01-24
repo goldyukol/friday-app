@@ -17,7 +17,6 @@ const Modals = (props: IProps) => {
         setBlockIsHidden(true)
     });
 
-
     const [questionBlockIsHidden, setQuestionBlockIsHidden] = useState(true);
     let onVisibleQuestionBlock = (() => {
         setQuestionBlockIsHidden(false)
@@ -27,14 +26,11 @@ const Modals = (props: IProps) => {
     });
 
 
-
     let classForSimpleModal = blockIsHidden===false ? 'styleBlock' : 'styleBlockIsHidden'
 let classForVisibleScreen = (blockIsHidden  ===false ||  questionBlockIsHidden ===false) ? 'visibleScreen' : ''
 
 
     let classForQuestionModal = questionBlockIsHidden===false ? 'styleQuestionBlock' : 'styleQuestionBlockIsHidden'
-
-
 
     return (
 
